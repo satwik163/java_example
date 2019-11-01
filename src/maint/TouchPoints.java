@@ -26,7 +26,7 @@ public class TouchPoints extends Checkmaiant {
 		String locale = "";
 		for(int i=0;i<loc.length;i++)
 		{   locale = loc[i];
-		int code = super.getResponseCode("https://m2.hm.com/m/"+ locale + "/index.html");
+		long code = super.getResponseCode("https://m2.hm.com/m/"+ locale + "/index.html");
 		if(code==503)
 		{
 		System.out.print(locale + "is DOWN" + "\n");

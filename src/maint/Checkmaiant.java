@@ -6,7 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 public class Checkmaiant {
 
-public int getResponseCode(String URL) throws IOException 
+public Long getResponseCode(String URL) throws IOException 
 
 {
     URL url = new URL(URL);
